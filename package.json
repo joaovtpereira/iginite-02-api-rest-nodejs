@@ -6,7 +6,9 @@
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix",
-    "lint:db": "eslint db/migrations --ext .ts --fix"
+    "lint:db": "eslint db/migrations --ext .ts --fix",
+    "lint:test": "eslint test --ext .ts --fix",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^22.8.7",
     "eslint": "^8.57.1",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.4"
   }
 }
